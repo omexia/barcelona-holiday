@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Catálogo Playas Cercanas a Barcelona</title>
+  <meta charset="UTF-8" />
+  <title>Catálogo Playas Cercanas a Barcelona - Fotos Reales</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f7f7fa; margin: 0; }
-    h1 { text-align: center; color: #245075; }
-    .catalogo { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin: 40px 10px; }
+    h1 { text-align: center; color: #245075; margin: 30px 0; }
+    .catalogo { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin: 20px; }
     .paquete {
-      background: #fff; border-radius: 12px; box-shadow: 0 4px 14px #0001;
-      width: 350px; padding: 16px; text-align: center;
+      background: white; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      width: 360px; padding: 16px; text-align: center;
       display: flex; flex-direction: column; align-items: center;
     }
-    .paquete img { width: 100%; border-radius: 8px; height: 210px; object-fit: cover; }
-    .paquete h2 { color: #3282b8; margin-top: 12px; }
-    .paquete a { text-decoration: none; color: #245075; font-weight: 600; }
-    @media (max-width: 800px) { .catalogo { flex-direction: column; align-items: center; } }
+    .paquete img {
+      width: 100%; height: 210px; object-fit: cover; border-radius: 8px;
+      box-shadow: 0 2px 9px rgba(0, 0, 0, 0.1);
+    }
+    .paquete h2 {
+      color: #3282b8; margin-top: 15px; margin-bottom: 8px;
+    }
+    .paquete p {
+      font-size: 15px; line-height: 1.3; margin-bottom: 12px;
+    }
+    .paquete a {
+      text-decoration: none; color: #245075; font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .paquete a:hover {
+      color: #00008B;
+    }
+    @media (max-width: 800px) {
+      .catalogo { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
-  <h1>Catálogo Vacacional: Playas bellas cerca de Barcelona</h1>
+  <h1>Catálogo Vacacional: Playas Bellas cerca de Barcelona</h1>
   <div class="catalogo">
 
     <div class="paquete">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="Playa de Castelldefels">
+      <a href="https://www.tripadvisor.es/Attraction_Review-g316850-d239435-Reviews-Castelldefels_Beach-Castelldefels_Catalonia.html" target="_blank" rel="noopener">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/73/fd/98/playa-castelldefels.jpg?w=700&h=500&s=1" alt="Playa de Castelldefels" />
+      </a>
       <h2>Castelldefels</h2>
       <p>Kilómetros de arena fina y aguas perfectas. Ambiente joven y rutas naturales.</p>
-      <a href="https://unsplash.com/s/photos/castelldefels" target="_blank">Ver más fotos</a>
+      <a href="https://www.tripadvisor.es/Attraction_Review-g316850-d239435-Reviews-Castelldefels_Beach-Castelldefels_Catalonia.html" target="_blank">Ver más fotos</a>
     </div>
+
     <div class="paquete">
-      <img src="https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?auto=format&fit=crop&w=700&q=80" alt="Sitges playa">
+      <a href="https://www.sitgesanytime.com/es/playas-de-sitges/" target="_blank" rel="noopener">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/86/23/4f/caseta-playa-sitges.jpg" alt="Playa en Sitges" />
+      </a>
       <h2>Sitges</h2>
-      <p>Playas urbanas con mucho encanto, cultura y un casco antiguo espectacular.</p>
-      <a href="https://unsplash.com/s/photos/sitges" target="_blank">Ver más fotos</a>
+      <p>Playas urbanas con encanto, cultura y un casco antiguo espectacular.</p>
+      <a href="https://www.sitgesanytime.com/es/playas-de-sitges/" target="_blank">Ver más fotos</a>
     </div>
+
     <div class="paquete">
-      <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=700&q=80" alt="Calella Maresme playa">
+      <a href="https://www.tripadvisor.es/Attraction_Review-g580327-d10446752-Reviews-Playa_Roca_Grossa-Calella_Catalonia.html" target="_blank" rel="noopener">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/46/73/ad/playa-roca-grossa.jpg?w=700&h=500&s=1" alt="Calella - Roca Grossa" />
+      </a>
       <h2>Calella (Maresme)</h2>
       <p>Ambiente alegre, calas y rutas senderistas, perfecta para familias o amigos.</p>
-      <a href="https://unsplash.com/s/photos/calella" target="_blank">Ver más fotos</a>
+      <a href="https://www.tripadvisor.es/Attraction_Review-g580327-d10446752-Reviews-Playa_Roca_Grossa-Calella_Catalonia.html" target="_blank">Ver más fotos</a>
     </div>
+
     <div class="paquete">
-      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80" alt="Playa del Garraf">
+      <a href="https://www.lavanguardia.com/participacion/las-fotos-de-los-lectores/20190828/4710568102/vacaciones-sant-pol-de-mar-maresme.html" target="_blank" rel="noopener">
+        <img src="https://media.lavanguardia.com/files/image_948_465/uploads/2019/08/28/5fa374b67b8b1.jpeg" alt="Playa Garraf" />
+      </a>
       <h2>Garraf</h2>
       <p>Un refugio pintoresco de casetas coloridas y aguas tranquilas entre montañas.</p>
-      <a href="https://unsplash.com/s/photos/garraf" target="_blank">Ver más fotos</a>
+      <a href="https://www.lavanguardia.com/participacion/las-fotos-de-los-lectores/20190828/4710568102/vacaciones-sant-pol-de-mar-maresme.html" target="_blank">Ver más fotos</a>
     </div>
+
     <div class="paquete">
-      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=700&q=80" alt="Sant Pol de Mar playa">
+      <a href="https://www.tripadvisor.es/LocationPhotoDirectLink-g315922-i173174035-Sant_Pol_de_Mar_Catalonia.html" target="_blank" rel="noopener">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/a6/34/ca/sant-pol-de-mar.jpg" alt="Sant Pol de Mar playa" />
+      </a>
       <h2>Sant Pol de Mar</h2>
       <p>Pueblo blanco de tradición marinera con calas tranquilas, ideal para relajarse.</p>
-      <a href="https://unsplash.com/s/photos/sant-pol-de-mar" target="_blank">Ver más fotos</a>
+      <a href="https://www.tripadvisor.es/LocationPhotoDirectLink-g315922-i173174035-Sant_Pol_de_Mar_Catalonia.html" target="_blank">Ver más fotos</a>
     </div>
+
     <div class="paquete">
-      <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=700&q=80" alt="Santa Susanna playa">
+      <a href="https://www.beachatlas.com/es/santa-susana" target="_blank" rel="noopener">
+        <img src="https://cdn.beachatlas.com/beaches/a94eda00-c34b-11e8-a788-0242ac110004.jpg" alt="Santa Susanna playa" />
+      </a>
       <h2>Santa Susanna</h2>
       <p>Playas largas y tranquilas, actividades familiares y acceso fácil en tren.</p>
-      <a href="https://unsplash.com/s/photos/santa-susanna" target="_blank">Ver más fotos</a>
+      <a href="https://www.beachatlas.com/es/santa-susana" target="_blank">Ver más fotos</a>
     </div>
 
   </div>
 </body>
 </html>
+
